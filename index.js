@@ -19,6 +19,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 
 app.get("/", function (req, res) {
+	console.log("Home page visited")
     res.sendFile(__dirname + '/views/index.html');
 });
 
